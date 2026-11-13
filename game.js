@@ -39,3 +39,5 @@ const linhKien = [
 for (const lk of linhKien) {
   console.log(lk.ten + " giá " + lk.gia);
 }
+
+//test bracnh
