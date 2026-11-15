@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HKG – Lunar Prospector Mission</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style11.css"></head><body class="intro">
+<canvas id="c"></canvas>
+<div id="title" class="intro"><b><svg width="18" height="20" viewBox="0 0 9 10" shape-rendering="crispEdges" aria-hidden="true"><path fill="#e5432f" d="M4 0h1v1H4zM3 1h3v1H3zM2 5h1v1H2zM6 5h1v1H6zM1 6h2v1H1zM6 6h2v1H6zM1 7h1v1H1zM7 7h1v1H7z"/><path fill="#fff" d="M3 2h3v5H3z"/><path fill="#6fd0ff" d="M4 3h1v1H4z"/><path fill="#999" d="M3 7h3v1H3z"/><path fill="#ff9d1c" d="M3 8h3v1H3z"/><path fill="#ffd23f" d="M4 9h1v1H4z"/></svg>HKG</b><i>Explore. Learn. Launch.</i></div>
+<aside id="hint" class="panel hid"><p>Choose your favorite Target</p></aside>
+<div id="surf"><div id="win"><div id="stage"><canvas id="core" aria-hidden="true"></canvas><canvas id="big" aria-hidden="true"></canvas><canvas id="big2" aria-hidden="true"></canvas><canvas id="ice" aria-hidden="true"></canvas></div></div><div id="lg"></div><div id="hs"></div></div>
+<div id="lcol" class="col">
+<aside class="panel"><h2>Briefing</h2><p id="st"></p></aside>
+<aside id="gimg" class="panel"><h2>Gravity map</h2><img id="gm" alt="NASA GRAIL gravity map of the Moon" referrerpolicy="no-referrer" src="https://assets.science.nasa.gov/content/dam/science/psd/lunar-science/2023/08/711377main_grail20121205_4x3_full.jpg" onerror="this.outerHTML='<p class=&quot;dim&quot;>Image unavailable (internet needed)</p>'"><p class="dim cap">NASA GRAIL gravity map</p></aside>
+<aside id="mimg" class="panel">
+  <h2>Magnetic field</h2>
+  <img id="mg" alt="Magnetic field strength of the Moon at 30 km altitude" referrerpolicy="no-referrer" src="https://www.researchgate.net/profile/Ian-Crawford-2/publication/267454477/figure/fig8/AS:295647354867719@1447499230649/Lunar-magnetic-anomalies-found-i-n-the-Moons-farside-southern-hemisphere-left-and_W640.jpg" onerror="this.outerHTML='<p class=&quot;dim&quot;>Image unavailable (internet needed, or the source blocks it)</p>'">
+  <p class="dim cap">Magnetic field strength of the Moon at 30 km altitude</p>
+</aside>
+</div>
+<div id="rcol" class="col">
+<aside id="bf" class="panel"><h2>Mission brief</h2><div id="bb"></div></aside>
+<aside id="ip" class="panel"><h2>Information</h2><h3>Tasks</h3><div id="tk"></div><h3>Requirements</h3><div id="rq"></div><h3>Difficulty</h3><div id="gg"></div></aside>
+<aside id="mn" class="panel"><h2>Minerals</h2><div id="mi"></div></aside>
+</div>
+<button id="start" disabled>Start Missions</button>
+<aside id="mpop" class="panel hid" role="dialog" aria-label="Mission details"><button id="mx" aria-label="Close">×</button><div id="mpb"></div></aside>
+<aside id="det" class="panel hid"><h2 id="dn"></h2><canvas id="th" width="130" height="64"></canvas><div id="db"></div><button id="go" class="opt">Continue to Missions ▸</button></aside>
+<button id="back">◂ Back</button>
+<div id="help"><h3>Instructions</h3>Drag the mouse to move around.<br>Scroll to zoom in and out.<br>Click a planet or the Moon to select a target.
+<div><button id="zi" aria-label="Zoom in">+</button><button id="zo" aria-label="Zoom out">−</button><button id="zr">Reset</button><button id="sd">Sound: on</button></div></div>
+<div id="tip"></div>
+<div id="typed"></div><div id="sub"></div>
+<div id="prompt">Select a destination <span>✦</span></div>
+<div id="introui"><span id="snd" hidden>Click anywhere to enable sound</span><button id="skip">Skip ▸</button></div>
+<script src="script11.js"></script></body></html>
